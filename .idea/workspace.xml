@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f5f7830-6092-4cfe-bc25-db3db6855040" name="Default" comment="" />
+    <list default="true" id="4f5f7830-6092-4cfe-bc25-db3db6855040" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -125,7 +127,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="js" value="13" />
-          <entry key="json" value="1" />
+          <entry key="json" value="2" />
           <entry key="jsx" value="15" />
           <entry key="less" value="10" />
           <entry key="md" value="1" />
@@ -133,7 +135,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="1" />
+          <entry key="JSON" value="2" />
           <entry key="JSX Harmony" value="15" />
           <entry key="JavaScript" value="13" />
           <entry key="Less" value="10" />
@@ -143,7 +145,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="151" />
-          <entry key="json" value="2" />
+          <entry key="json" value="8" />
           <entry key="jsx" value="1893" />
           <entry key="less" value="124" />
           <entry key="md" value="29" />
@@ -151,7 +153,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="2" />
+          <entry key="JSON" value="8" />
           <entry key="JSX Harmony" value="1893" />
           <entry key="JavaScript" value="151" />
           <entry key="Less" value="124" />
@@ -178,7 +180,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/App/App.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="367">
@@ -186,6 +188,15 @@
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -211,7 +222,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setFilter</find>
       <find>.then</find>
       <find>CART_EVENTS</find>
       <find>this.state</find>
@@ -238,9 +248,10 @@
       <find>grid-template-columns</find>
       <find>template</find>
       <find>columnIdx</find>
-      <find>getGridRow</find>
       <find>participantNumber</find>
       <find>naumen</find>
+      <find>getGridRow</find>
+      <find>getfood</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -477,12 +488,12 @@
       <workItem from="1539871286841" duration="76000" />
       <workItem from="1539871465441" duration="208000" />
       <workItem from="1539871963939" duration="15000" />
-      <workItem from="1539872339935" duration="14996000" />
+      <workItem from="1539872339935" duration="15119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="438394000" />
+    <option name="totallyTimeSpent" value="438517000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -495,6 +506,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="npm" order="0" sideWeight="0.10194175" side_tool="true" weight="0.18871057" />
       <window_info id="Favorites" order="1" sideWeight="0.1053391" side_tool="true" weight="0.19071038" />
@@ -622,13 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -813,6 +818,13 @@
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
         </state>
       </provider>
     </entry>
