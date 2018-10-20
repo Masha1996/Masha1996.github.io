@@ -190,8 +190,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Timer/Timer.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="195">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -435,12 +435,12 @@
       <workItem from="1539871286841" duration="76000" />
       <workItem from="1539871465441" duration="208000" />
       <workItem from="1539871963939" duration="15000" />
-      <workItem from="1539872339935" duration="16820000" />
+      <workItem from="1539872339935" duration="17117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="440218000" />
+    <option name="totallyTimeSpent" value="440515000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,6 +453,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="npm" order="0" sideWeight="0.10194175" side_tool="true" weight="0.18871057" />
       <window_info id="Favorites" order="1" sideWeight="0.1053391" side_tool="true" weight="0.19071038" />
@@ -777,8 +778,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Timer/Timer.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="195">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
