@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f5f7830-6092-4cfe-bc25-db3db6855040" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Timer/Timer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Timer/Timer.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Timer/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Timer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="4f5f7830-6092-4cfe-bc25-db3db6855040" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -467,12 +460,12 @@
       <workItem from="1539871286841" duration="76000" />
       <workItem from="1539871465441" duration="208000" />
       <workItem from="1539871963939" duration="15000" />
-      <workItem from="1539872339935" duration="16223000" />
+      <workItem from="1539872339935" duration="16337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="439621000" />
+    <option name="totallyTimeSpent" value="439735000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -485,7 +478,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" order="0" sideWeight="0.10194175" side_tool="true" weight="0.18871057" />
       <window_info id="Favorites" order="1" sideWeight="0.1053391" side_tool="true" weight="0.19071038" />
