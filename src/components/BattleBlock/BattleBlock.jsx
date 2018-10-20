@@ -6,6 +6,7 @@ import 'styles/styles.less';
 import styles from './BattleBlock.less';
 import BattleHeader from 'components/BattleHeader';
 import ParticipantBlock from 'components/ParticipantBlock';
+import Timer from 'components/Timer';
 import cn from 'classnames';
 
 export class BattleBlock extends Component<Props> {
@@ -23,7 +24,7 @@ export class BattleBlock extends Component<Props> {
 					<BattleHeader />
 					<ParticipantBlock />
 					<ParticipantBlock />
-					<div className="flex-item-timer"/>
+					<Timer />
 				</div>
 			</div>
 		);

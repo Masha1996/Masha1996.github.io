@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f5f7830-6092-4cfe-bc25-db3db6855040" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Timer/Timer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Timer/Timer.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Timer/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Timer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -126,19 +131,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="13" />
+          <entry key="js" value="14" />
           <entry key="json" value="2" />
-          <entry key="jsx" value="15" />
-          <entry key="less" value="10" />
+          <entry key="jsx" value="17" />
+          <entry key="less" value="11" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="2" />
-          <entry key="JSX Harmony" value="15" />
-          <entry key="JavaScript" value="13" />
-          <entry key="Less" value="10" />
+          <entry key="JSX Harmony" value="17" />
+          <entry key="JavaScript" value="14" />
+          <entry key="Less" value="11" />
           <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
@@ -146,17 +151,17 @@
         <counts>
           <entry key="js" value="151" />
           <entry key="json" value="8" />
-          <entry key="jsx" value="1893" />
-          <entry key="less" value="124" />
+          <entry key="jsx" value="1930" />
+          <entry key="less" value="135" />
           <entry key="md" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="8" />
-          <entry key="JSX Harmony" value="1893" />
+          <entry key="JSX Harmony" value="1930" />
           <entry key="JavaScript" value="151" />
-          <entry key="Less" value="124" />
+          <entry key="Less" value="135" />
           <entry key="Markdown" value="29" />
         </counts>
       </usages-collector>
@@ -169,22 +174,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
+        <entry file="file://$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-              <folding>
-                <element signature="e#9#56#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/App/App.jsx">
+        <entry file="file://$PROJECT_DIR$/src/components/Timer/Timer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="82" column="1" lean-forward="true" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="12" column="42" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="42" />
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
@@ -193,19 +195,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/src/components/Timer/Timer.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="105">
+              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -248,10 +241,10 @@
       <find>grid-template-columns</find>
       <find>template</find>
       <find>columnIdx</find>
-      <find>participantNumber</find>
       <find>naumen</find>
-      <find>getGridRow</find>
       <find>getfood</find>
+      <find>getGridRow</find>
+      <find>participantNumber</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -272,8 +265,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/types/filter.js" />
-        <option value="$PROJECT_DIR$/src/types/data.js" />
         <option value="$PROJECT_DIR$/src/reducers/app.js" />
         <option value="$PROJECT_DIR$/src/types/app.js" />
         <option value="$PROJECT_DIR$/src/actions/app.js" />
@@ -316,13 +307,15 @@
         <option value="$PROJECT_DIR$/src/components/BattleButton/BattleButton.jsx" />
         <option value="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.less" />
         <option value="$PROJECT_DIR$/src/components/BattleBlock/flow.js" />
-        <option value="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" />
         <option value="$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx" />
         <option value="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.less" />
         <option value="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx" />
         <option value="$PROJECT_DIR$/src/helpers/grid.js" />
         <option value="$PROJECT_DIR$/src/components/App/App.jsx" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Timer/Timer.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Timer/Timer.less" />
       </list>
     </option>
   </component>
@@ -379,13 +372,6 @@
               <item name="avers-react" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="BattleBlock" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -393,14 +379,7 @@
               <item name="avers-react" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ParticipantBlock" type="462c0819:PsiDirectoryNode" />
+              <item name="Timer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -488,12 +467,12 @@
       <workItem from="1539871286841" duration="76000" />
       <workItem from="1539871465441" duration="208000" />
       <workItem from="1539871963939" duration="15000" />
-      <workItem from="1539872339935" duration="15119000" />
+      <workItem from="1539872339935" duration="16223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="438517000" />
+    <option name="totallyTimeSpent" value="439621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -538,15 +517,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/reducers/filter.js" />
-    <entry file="file://$PROJECT_DIR$/src/actions/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DishCard/DishCard.less" />
     <entry file="file://$PROJECT_DIR$/src/components/DishCard/DishCard.jsx" />
     <entry file="file://$PROJECT_DIR$/node_modules/redux/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/components/DeliverySelector/DeliverySelector.jsx" />
@@ -743,16 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding>
-            <element signature="e#9#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/html-webpack-plugin/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -791,16 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="e#9#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -808,6 +758,13 @@
             <caret column="17" selection-start-column="17" selection-end-column="17" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -821,10 +778,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="330">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="e#9#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Timer/flow.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Timer/Timer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="e#9#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Timer/Timer.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
