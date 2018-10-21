@@ -24,7 +24,7 @@ export class BattleBlock extends Component<Props> {
 					<BattleHeader />
 					<ParticipantBlock />
 					<ParticipantBlock />
-					<Timer />
+					{false ? <Timer /> : null}
 				</div>
 			</div>
 		);

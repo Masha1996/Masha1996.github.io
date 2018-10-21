@@ -14,8 +14,8 @@ module.exports = {
 		'helpers': resolve(define.src, 'helpers'),
 		'images': resolve(define.src, 'images'),
 		'init': resolve(define.src, 'init'),
-		// 'reducers': resolve(define.src, 'reducers'), //TODO потом включить
-		// 'store': resolve(define.src, 'store'), //TODO потом включить
+		'reducers': resolve(define.src, 'reducers'),
+		'store': resolve(define.src, 'store'),
 		'styles': resolve(define.src, 'styles'),
 		'types': resolve(define.src, 'types')
 	},

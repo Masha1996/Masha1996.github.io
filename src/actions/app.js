@@ -1,64 +1,31 @@
 // @flow
-import {APP_EVENTS} from 'constants/app';
-import {dishes} from 'data/dishes';
-import {restaurants} from 'data/restaurants';
+import {FILE} from 'constants/app';
 import type {Dispatch} from 'types';
 
-export const loadAppData = () => (dispatch: Dispatch) => {
-	dispatch({
-		type: APP_EVENTS.LOADING
-	});
+export const listParticipants = (target) => (dispatch: Dispatch) => {
+	const file = target.files[0];
 
-	/*
-	fetch('data/dishes')
-		.catch(error => {
-			dispatch({
-				type: 'appDataloadingError'
-			})
-		})
-		.then(result => {
-			return result.json();
-		})
-		.then(json => {
-			dispatch({
-				type: 'appDataLoaded',
-				data: {
-					dishes,
-					restaurants
-				}
-			});
+	const reader = new FileReader();
+	reader.readAsText(file);
+
+	reader.onload = () => {
+		const result = reader.result.split('\n').filter(str => str).map(line => {
+			const [number, name, age, dan, weight, trainer] = line.split(',');
+			return {
+				number,
+				name,
+				age,
+				dan,
+				weight,
+				trainer,
+				score: 0
+			}
 		});
-		*/
-
-	const dishesPromise = new Promise((resolve, reject) => {
-		setTimeout(() => {
-			resolve(dishes)
-		}, 500);
-	});
-
-	const restaurantsPromise = new Promise((resolve, reject) => {
-		setTimeout(() => {
-			resolve(restaurants)
-		}, 500);
-	});
-
-	Promise.all([dishesPromise, restaurantsPromise])
-		.catch(() => {
-			dispatch({
-				type: APP_EVENTS.LOADING_ERROR
-			});
-			throw new Error('Случилось страшное');
-		})
-		.then(results => {
-			dispatch({
-				type: APP_EVENTS.LOADED,
-				data: {
-					dishes: results[0],
-					restaurants: results[1]
-				}
-			});
-		})
-		.catch(error => {
-			window.top.console.log(error.message);
-		})
+		dispatch({
+			type: FILE.SELECTED,
+			data: {
+				listParticipants: result
+			}
+		});
+	};
 };

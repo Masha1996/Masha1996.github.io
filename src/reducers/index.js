@@ -1,8 +1,8 @@
-// import app from './app';
+import app from './app';
 import {combineReducers} from 'redux';
 
 export const root = combineReducers({
-	// app,
+	app
 });
 
 export default root;

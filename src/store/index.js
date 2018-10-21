@@ -1,4 +1,3 @@
-/*
 import {applyMiddleware, createStore} from 'redux';
 import {createLogger} from 'redux-logger';
 import root from 'reducers';
@@ -12,7 +11,7 @@ export const configureStore = (initialState) => {
 		middleware.push(createLogger());
 	}
 
-	// const store = createStore(root, initialState, applyMiddleware(...middleware));
+	const store = createStore(root, initialState, applyMiddleware(...middleware));
 
 	if (module && module.hot) {
 		module.hot.accept('../reducers', () => {
@@ -25,4 +24,3 @@ export const configureStore = (initialState) => {
 };
 
 export default configureStore;
-*/
