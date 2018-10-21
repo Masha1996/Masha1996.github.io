@@ -2128,6 +2128,10 @@ html {
 
 
 
+._2Iv9E_jp4V1GioDntYYb4Z {
+  width: 100%;
+}
+
 /*@font-face {
 	font-family: GothamPro;
 	src: url(../fonts/GothamPro.ttf);
@@ -2173,6 +2177,15 @@ html {
 }
 ._10FC73aNBdD2zdsF3hvnFS {
   grid-row: span 8 / auto;
+}
+._2fHFQMMBTKCVQWIbDmQC1f {
+  background-color: yellow !important;
+}
+._2fHFQMMBTKCVQWIbDmQC1f::before {
+  content: "\412\44B\441\442\443\43F\430\44E\442: ";
+}
+._2fHFQMMBTKCVQWIbDmQC1f + div::before {
+  content: "\413\43E\442\43E\432\44F\442\441\44F: ";
 }
 
 ._23Birz-TUEdKgf-BJmvV9N {

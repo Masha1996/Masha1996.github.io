@@ -13,7 +13,7 @@ const app = (state: AppState = initialAppState, action: AppAction = defaultAppAc
 		case PARTICIPANT.ADD:
 			return {
 				...state,
-				tournament: setTournament(state.tournament, action.data.stage, action.data.block, action.data.item, action.data.value)
+				tournament: setTournament(state.tournament, action.data.stage, action.data.block, action.data.item, action.data.value),
 			};
 		default:
 			return state;

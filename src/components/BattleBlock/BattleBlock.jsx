@@ -13,20 +13,20 @@ export class BattleBlock extends Component<Props> {
 	props: Props;
 
 	getStyles = () => {
-		const {gridRow} = this.props;
-		return cn([styles.flexItem, styles[gridRow]]);
+		const {gridRow, active} = this.props;
+		return cn([styles.flexItem, styles[gridRow], active ? styles.active : null]);
 	};
 
 	render () {
-		const {stage, blockNumber} = this.props;
+		const {stage, blockNumber, active} = this.props;
 
 		return (
 			<div className={this.getStyles()}>
 				<div className="flex-item">
 					<BattleHeader />
-					<ParticipantBlock stage={stage} blockNumber={blockNumber} item='first'/>
-					<ParticipantBlock stage={stage} blockNumber={blockNumber} item='second'/>
-					{false ? <Timer /> : null}
+					<ParticipantBlock stage={stage} blockNumber={blockNumber} item={0}/>
+					<ParticipantBlock stage={stage} blockNumber={blockNumber} item={1}/>
+					{active ? <Timer /> : null}
 				</div>
 			</div>
 		);

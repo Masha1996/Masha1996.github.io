@@ -43,9 +43,30 @@ export class App extends Component<Props> {
 			gridTemplateColumns: gridTemplateColumns}
 	};
 
+	isActiveBlock = (stage, blockNumber) => {
+		const timer = ['1/4', 2];
+		if (timer[0] === stage && timer[1] === blockNumber) {
+			return true;
+		} else {
+			return false;
+		}
+	};
+
+	handleClick = () => {
+		console.log('Клик по блоку');
+	};
+
 	battleBlocks = (participants: Array<any>) => {
 		const columns = this.getGridRow(participants.length);
-		return columns.map((item, index) => <BattleBlock key={index} gridRow={item[0]} stage={item[1]} blockNumber={item[2]} />);
+		return columns.map((item, index) =>
+			<BattleBlock
+				key={index}
+				gridRow={item[0]}
+				stage={item[1]}
+				blockNumber={item[2]}
+				active={this.isActiveBlock(item[1], item[2])}
+				// onClick={this.handleClick()}
+			/>);
 	};
 
 	getGridRow = (size: number) => {

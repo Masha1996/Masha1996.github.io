@@ -8,5 +8,6 @@ export const initialAppState = {
 		'1/2': [],
 		'third-place': [],
 		'final': []
-	}
+	},
+	activeBlock: ['1/4', 2]
 };

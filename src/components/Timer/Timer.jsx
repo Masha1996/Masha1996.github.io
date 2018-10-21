@@ -11,14 +11,14 @@ export class Timer extends Component<Props> {
 	render () {
 		return (
 			<div className={styles.flexItemTimer}>
-				<p htmlFor="roundTime">Round Time:</p>
-				<input id="roundTime" type="number" value="20" />
-				<button onClick="startRound()">Start Round</button>
+				<p>Round Time:</p>
+				{/*<input type="number" value={20} />*/}
+				<button>Start Round</button>
 				<br />
 				<p className="timeLabel" id="timeLabel">00:00</p>
-				<button id="resumeBtn" disabled="true" onClick="resume()">Resume</button>
-				<button id="pauseBtn" disabled="true" onClick="pause()">Pause</button>
-				<button onClick="addSeconds(60)">1 минута</button></div>
+				<button id="resumeBtn" disabled="true">Resume</button>
+				<button id="pauseBtn" disabled="true">Pause</button>
+				<button>1 минута</button></div>
 		);
 	}
 }

@@ -36,7 +36,7 @@ export const participantAdd = (stage, block, item, value) => (dispatch: Dispatch
 		data: {
 			stage: stage,
 			block: block,
-			item: item === 'first' ? 0 : 1,
+			item: item,
 			value: value
 		}
 	});

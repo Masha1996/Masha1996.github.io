@@ -24,4 +24,16 @@
 	.span8 {
 		grid-row: span 8 / auto;
 	}
+
+	.active {
+		background-color: yellow !important;
+
+		&::before {
+			content: "Выступают: ";
+		}
+
+		& + div::before {
+			content: "Готовятся: ";
+		}
+	}
 }

@@ -18,11 +18,20 @@ export class ParticipantBlock extends Component<Props, State> {
 		const value = e.target.value;
 		const participant = listParticipants.filter(item => item.number === value);
 
-		participantAdd && participantAdd(stage, blockNumber, item, participant[0]);
+		participantAdd && participantAdd(stage, blockNumber, item, participant);
+	};
+
+	getParticipantInfo = () => {
+		const {tournament, stage, item, blockNumber} = this.props;
+		const participantInfo = tournament[stage][blockNumber] ? tournament[stage][blockNumber][item] : null;
+
+		console.log(participantInfo);
+		return participantInfo;
 	};
 
 	render () {
 		const {listParticipants} = this.props;
+
 		return (
 			<div className={styles.participantRow}>
 				<input className={styles.participantNumber} type="text" name=""/>
@@ -52,7 +61,8 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = state => ({
-	listParticipants: state.app.listParticipants
+	listParticipants: state.app.listParticipants,
+	tournament: state.app.tournament
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ParticipantBlock);
