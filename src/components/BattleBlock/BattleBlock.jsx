@@ -18,12 +18,14 @@ export class BattleBlock extends Component<Props> {
 	};
 
 	render () {
+		const {stage, blockNumber} = this.props;
+
 		return (
 			<div className={this.getStyles()}>
 				<div className="flex-item">
 					<BattleHeader />
-					<ParticipantBlock />
-					<ParticipantBlock />
+					<ParticipantBlock stage={stage} blockNumber={blockNumber} item='first'/>
+					<ParticipantBlock stage={stage} blockNumber={blockNumber} item='second'/>
 					{false ? <Timer /> : null}
 				</div>
 			</div>

@@ -6,13 +6,19 @@ import 'styles/styles.less';
 import BattleButton from 'components/BattleButton';
 import styles from './ParticipantBlock.less';
 import {connect} from 'react-redux';
+import {bindActionCreators} from "redux";
+import {participantAdd} from 'actions/app';
 
 export class ParticipantBlock extends Component<Props, State> {
 	props: Props;
 	state: State;
 
-	handleSelect = () => {
+	handleSelect = (e: Event) => {
+		const {stage, item, listParticipants, blockNumber, participantAdd} = this.props;
+		const value = e.target.value;
+		const participant = listParticipants.filter(item => item.number === value);
 
+		participantAdd && participantAdd(stage, blockNumber, item, participant[0]);
 	};
 
 	render () {
@@ -21,7 +27,7 @@ export class ParticipantBlock extends Component<Props, State> {
 			<div className={styles.participantRow}>
 				<input className={styles.participantNumber} type="text" name=""/>
 				<select name="" className={styles.participantName} onChange={this.handleSelect}>
-					<option hidden value="0"></option>
+					<option value="0"></option>
 					{
 						listParticipants.map((item, index) => <option key={index} value={item.number}>{item.name}</option> )
 					}
@@ -41,8 +47,12 @@ export class ParticipantBlock extends Component<Props, State> {
 	}
 }
 
+const mapDispatchToProps = dispatch => ({
+	participantAdd: bindActionCreators(participantAdd, dispatch)
+});
+
 const mapStateToProps = state => ({
 	listParticipants: state.app.listParticipants
 });
 
-export default connect(mapStateToProps)(ParticipantBlock);
+export default connect(mapStateToProps, mapDispatchToProps)(ParticipantBlock);

@@ -6,6 +6,7 @@ import BattleBlock from 'components/BattleBlock';
 import type {Props} from './flow';
 import React, {Component} from 'react';
 import styles from './App.less'
+import connect from "react-redux/es/connect/connect";
 
 export class App extends Component<Props> {
 	props: Props;
@@ -44,7 +45,7 @@ export class App extends Component<Props> {
 
 	battleBlocks = (participants: Array<any>) => {
 		const columns = this.getGridRow(participants.length);
-		return columns.map((item, index) => <BattleBlock key={index} gridRow={item} />);
+		return columns.map((item, index) => <BattleBlock key={index} gridRow={item[0]} stage={item[1]} blockNumber={item[2]} />);
 	};
 
 	getGridRow = (size: number) => {
@@ -53,33 +54,43 @@ export class App extends Component<Props> {
 		for (let i = gridSize, columnIdx = 0; i >= 1; i = i / 2, columnIdx++) {
 			for (let j = 0; j < i; j++) {
 				const rowSpan = columnIdx === 0 ? '' : (columnIdx === 1 ? 'span2' : `span${Math.pow(2, columnIdx)}`);
-
-				rowSpanArray.push(rowSpan);
+				const stage = i === 1 ? 'third-place' : `1/${i}`;
+				const blockNumber = j;
+				const block = [rowSpan, stage, blockNumber];
+				rowSpanArray.push(block);
+				if (i === 1) {
+					const rowSpan = columnIdx === 0 ? '' : (columnIdx === 1 ? 'span2' : `span${Math.pow(2, columnIdx)}`);
+					const stage = 'final';
+					const blockNumber = j + 1;
+					const block = [rowSpan, stage, blockNumber];
+					rowSpanArray.push(block);
+				}
 			}
 		}
-		const lastElem = rowSpanArray[rowSpanArray.length - 1];
-		rowSpanArray.push(lastElem);
 		return rowSpanArray;
 	};
 
 	render () {
-		const participants = [
-			[7, 'Гнётов Илья', 7, 11, '', 'АВЕРС'],
-			[65, 'Калинин Митя', 6, '-', '', 'Фархуллин Р.'],
-			[43, 'Потапов Дмитрий', 8, 11, '', 'Старостин А.Н.'],
-			[76, 'Бондаренко Макар', 6, 11, '', 'Фархуллин Р.'],
-			[24, 'Федорук Вячеслав', 7, 11, '', 'АВЕРС']
-		];
+		const {listParticipants} = this.props;
 		return (
 			<div>
 				<Header />
-				<div className={styles.gridContainer} style={this.getGridStiles(participants.length)}>
-					{this.battleBlocks(participants)}
-				</div>
+				{
+					listParticipants && (listParticipants.length > 0)
+						? (
+							<div className={styles.gridContainer} style={this.getGridStiles(listParticipants.length)}>
+							{this.battleBlocks(listParticipants)}
+							</div>
+						) : null
+				}
 				<Footer />
 			</div>
 		);
 	}
 }
 
-export default App;
+const mapStateToProps = state => ({
+	listParticipants: state.app.listParticipants
+});
+
+export default connect(mapStateToProps)(App);
