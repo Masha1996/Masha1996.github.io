@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f5f7830-6092-4cfe-bc25-db3db6855040" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/BattleButton/BattleButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BattleButton/BattleButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="4f5f7830-6092-4cfe-bc25-db3db6855040" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -177,11 +171,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="25" selection-end-column="4" />
+            <state relative-caret-position="427">
+              <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
@@ -206,18 +200,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-              <folding>
-                <element signature="e#9#56#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -533,12 +515,12 @@
       <workItem from="1539871465441" duration="208000" />
       <workItem from="1539871963939" duration="15000" />
       <workItem from="1539872339935" duration="37198000" />
-      <workItem from="1540398287950" duration="6480000" />
+      <workItem from="1540398287950" duration="6682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="467076000" />
+    <option name="totallyTimeSpent" value="467278000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -894,20 +876,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="25" selection-end-column="4" />
+        <state relative-caret-position="61">
+          <caret line="35" column="4" lean-forward="true" selection-start-line="31" selection-start-column="2" selection-end-line="35" selection-end-column="4" />
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="35" column="4" lean-forward="true" selection-start-line="31" selection-start-column="2" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="345">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>
@@ -921,10 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+        <state relative-caret-position="427">
+          <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>

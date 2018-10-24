@@ -2127,14 +2127,6 @@ html {
 }
 
 
-
-._2Iv9E_jp4V1GioDntYYb4Z {
-  width: 100%;
-}
-._1wDrUp7MGpaBdIG67c9OVe {
-  margin-bottom: 20px;
-}
-
 /*@font-face {
 	font-family: GothamPro;
 	src: url(../fonts/GothamPro.ttf);
@@ -2152,117 +2144,70 @@ html {
           box-sizing: border-box;
 }
 
-._3GZGArpEGBhtUiKDI5-vDS {
-  min-width: 360px;
-  background-color: rgba(255, 255, 255, 0.8);
+td {
+  border: 0px solid;
   text-align: center;
-  font-size: 30px;
-  padding: 10px;
-  font-family: Arial;
-  padding: 0;
-  margin: -3px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-size: 55px;
 }
-._3DrVN4KxHF6ScmsyFJ14hn {
-  grid-row: span 2 / auto;
+h1 {
+  margin: 0;
 }
-._1qwIosQ20pZpuVFgdNxmlg {
-  grid-row: span 4 / auto;
-}
-._10FC73aNBdD2zdsF3hvnFS {
-  grid-row: span 8 / auto;
-}
-._2fHFQMMBTKCVQWIbDmQC1f {
-  background-color: yellow !important;
-}
-._2fHFQMMBTKCVQWIbDmQC1f::before {
-  content: "\412\44B\441\442\443\43F\430\44E\442: ";
-}
-._2fHFQMMBTKCVQWIbDmQC1f + div::before {
-  content: "\413\43E\442\43E\432\44F\442\441\44F: ";
-}
-
-._23Birz-TUEdKgf-BJmvV9N {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-._23Birz-TUEdKgf-BJmvV9N * {
-  margin: 0 2px;
-}
-._23Birz-TUEdKgf-BJmvV9N h6 {
-  margin-top: 5px;
-}
-
-._2dBkt01xYRffklvaMhq19z {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-._2dBkt01xYRffklvaMhq19z * {
-  margin: 0 2px;
-}
-._2dBkt01xYRffklvaMhq19z ._2tY3RoXRWCnaQ-WTHCtsr3 {
-  width: 30px;
-  height: 25px;
-}
-._2dBkt01xYRffklvaMhq19z ._3WHfBBJPdQbLkRX3h3TmPu {
-  width: 150px;
-  height: 25px;
-}
-._2dBkt01xYRffklvaMhq19z ._2neD22Rz4UXdr0KVGrqy39 {
-  text-align: left;
-  font-size: 12px;
-  width: 100%;
-  margin-top: 0;
-  margin-left: 8px;
-}
-
-._1MZIhjh0PRsb32R1nZpkGy {
-  padding: 0;
-  font-size: 16px;
-}
-._1MZIhjh0PRsb32R1nZpkGy * {
-  margin: 0 3px;
-}
-._1MZIhjh0PRsb32R1nZpkGy p {
-  font-size: 20px;
-}
-
-.O-iBPdkHw7LX05aKCJDcT {
-  min-width: 100%;
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 2px;
-  overflow: auto;
-}
-.O-iBPdkHw7LX05aKCJDcT div {
-  background-color: rgba(255, 255, 255, 0.8);
+h2 {
+  color: #8A0808;
   text-align: center;
-  padding: 5px 0;
-  font-size: 23px;
+  background: #fc0;
+  padding: 5px;
+  font-size: 50px;
+  width: 1028px;
+  margin: 0 auto;
+}
+h3 {
+  color: #8A0808;
+  text-align: center;
+  background: #FF8000;
+  padding: 5px;
+  font-size: 25px;
+  width: 1028px;
+  margin: auto;
+}
+h4 {
+  color: black;
+  text-align: center;
+  background: #8ED6FB;
+  padding: 5px;
+  font-size: 25px;
+  width: 1028px;
+  margin: auto;
+}
+.bi6qNLBB_TfJXEvpmQ1dZ {
+  background: #fefcea;
+  /* Для старых браузров */
+  background: -webkit-gradient(linear, left bottom, left top, from(#fcbe7f), to(#FAAC58));
+  background: -o-linear-gradient(bottom, #fcbe7f, #FAAC58);
+  background: linear-gradient(to top, #fcbe7f, #FAAC58);
+}
+._28bZxJneU4xIUNe3e46_DZ {
+  background: #fefcea;
+  /* Для старых браузров */
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(#fcbe7f));
+  background: -o-linear-gradient(bottom, #FFFFFF, #fcbe7f);
+  background: linear-gradient(to top, #FFFFFF, #fcbe7f);
+}
+._1AvH9qvIKEKS0CBF4-Tqzv {
+  background: #fefcea;
+  /* Для старых браузров */
+  background: -webkit-gradient(linear, left bottom, left top, from(#d0eefd), to(#8ED6FB));
+  background: -o-linear-gradient(bottom, #d0eefd, #8ED6FB);
+  background: linear-gradient(to top, #d0eefd, #8ED6FB);
+}
+._3lAHNvEqi1ZqHe6nmona-U {
+  background: #fefcea;
+  /* Для старых браузров */
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(#d0eefd));
+  background: -o-linear-gradient(bottom, #FFFFFF, #d0eefd);
+  background: linear-gradient(to top, #FFFFFF, #d0eefd);
+}
+._3proEPnHsXayhZhBHIpJ-h {
+  background: #64b964;
 }
 
