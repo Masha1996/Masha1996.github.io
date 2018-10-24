@@ -9,6 +9,28 @@ export class Scoreboard extends Component<Props> {
 	props: Props;
 
 	render () {
+		// Read actual values once
+		const idList = [
+			"leftPlayerNumber",
+			"rightPlayerNumber",
+			"leftPlayerName",
+			"NextLeftPlayerNumber",
+			"NextRightPlayerNumber",
+			"NextLeftPlayerName",
+			"NextRightPlayerName",
+			"rightPlayerName",
+			"scoreLeft",
+			"scoreRight",
+			"timeLabel",
+			"NameTurnir",
+			"fightNumber"
+		];
+
+		// Assign values from local storage on startup
+		// idList.map((id) => {
+		// 	document.getElementById(id).textContent = localStorage[id];
+		// });
+
 		return (
 			<div>
 				<h2 id="NameTurnir" />

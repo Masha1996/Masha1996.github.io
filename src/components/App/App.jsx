@@ -44,16 +44,12 @@ export class App extends Component<Props> {
 	};
 
 	isActiveBlock = (stage, blockNumber) => {
-		const timer = ['1/4', 2];
-		if (timer[0] === stage && timer[1] === blockNumber) {
+		const {activeBlock} = this.props;
+		if (activeBlock[0] === stage && activeBlock[1] === blockNumber) {
 			return true;
 		} else {
 			return false;
 		}
-	};
-
-	handleClick = () => {
-		console.log('Клик по блоку');
 	};
 
 	battleBlocks = (participants: Array<any>) => {
@@ -65,7 +61,6 @@ export class App extends Component<Props> {
 				stage={item[1]}
 				blockNumber={item[2]}
 				active={this.isActiveBlock(item[1], item[2])}
-				// onClick={this.handleClick()}
 			/>);
 	};
 
@@ -111,7 +106,8 @@ export class App extends Component<Props> {
 }
 
 const mapStateToProps = state => ({
-	listParticipants: state.app.listParticipants
+	listParticipants: state.app.listParticipants,
+	activeBlock: state.app.activeBlock
 });
 
 export default connect(mapStateToProps)(App);

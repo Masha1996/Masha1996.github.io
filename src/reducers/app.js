@@ -2,6 +2,7 @@
 import {initialAppState} from 'constants/index';
 import type {AppAction, AppState} from 'types/app';
 import {FILE, PARTICIPANT, defaultAppAction} from 'constants/app';
+import {BLOCK} from "../constants/app";
 
 const app = (state: AppState = initialAppState, action: AppAction = defaultAppAction): AppState => {
 	switch (action.type) {
@@ -15,6 +16,11 @@ const app = (state: AppState = initialAppState, action: AppAction = defaultAppAc
 				...state,
 				tournament: setTournament(state.tournament, action.data.stage, action.data.block, action.data.item, action.data.value),
 			};
+		case BLOCK.ACTIVE:
+			return {
+				...state,
+				activeBlock: isActive(state.activeBlock, action.data.activeBlock)
+			};
 		default:
 			return state;
 	}
@@ -27,4 +33,14 @@ const setTournament = (tournament, stage, block, item, participant) => {
 	battle[item] = participant;
 	tournament[stage][block] = battle;
 	return tournament;
+};
+
+const isActive = (activeBlock, newActiveBlock) => {
+	let flag = true;
+	debugger;
+
+	activeBlock && activeBlock.map((item, index) => {
+		flag = item === newActiveBlock[index] ?  false : true;
+	});
+	return flag ? newActiveBlock : [];
 };

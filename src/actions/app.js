@@ -1,5 +1,5 @@
 // @flow
-import {FILE, PARTICIPANT} from 'constants/app';
+import {FILE, PARTICIPANT, BLOCK} from 'constants/app';
 import type {Dispatch} from 'types';
 
 export const listParticipants = (target) => (dispatch: Dispatch) => {
@@ -38,6 +38,16 @@ export const participantAdd = (stage, block, item, value) => (dispatch: Dispatch
 			block: block,
 			item: item,
 			value: value
+		}
+	});
+};
+
+export const activeBlock = (state, block) => (dispatch: Dispatch) => {
+	const activeBlock = [state, block];
+	dispatch({
+		type: BLOCK.ACTIVE,
+		data: {
+			activeBlock: activeBlock
 		}
 	});
 };
