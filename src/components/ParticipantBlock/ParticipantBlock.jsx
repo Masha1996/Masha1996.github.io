@@ -29,13 +29,19 @@ export class ParticipantBlock extends Component<Props, State> {
 		return participantInfo;
 	};
 
+	handleClick = (e) => {
+		e.stopPropagation()
+		// const {activeBlock, stage, blockNumber} = this.props;
+		// activeBlock && activeBlock(stage, blockNumber);
+	};
+
 	render () {
 		const {listParticipants} = this.props;
 
 		return (
 			<div className={styles.participantRow}>
-				<input className={styles.participantNumber} type="text" name=""/>
-				<select name="" className={styles.participantName} onChange={this.handleSelect}>
+				<input className={styles.participantNumber} type="text" name="" onClick={this.handleClick}/>
+				<select name="" className={styles.participantName} onChange={this.handleSelect} onClick={this.handleClick}>
 					<option value="0"></option>
 					{
 						listParticipants.map((item, index) => <option key={index} value={item.number}>{item.name}</option> )

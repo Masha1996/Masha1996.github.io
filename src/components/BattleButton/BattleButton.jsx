@@ -7,10 +7,16 @@ import 'styles/styles.less';
 export class BattleButton extends Component<Props> {
 	props: Props;
 
+	handleClick = (e) => {
+		e.stopPropagation()
+		// const {activeBlock, stage, blockNumber} = this.props;
+		// activeBlock && activeBlock(stage, blockNumber);
+	};
+
 	render () {
 		const {content} = this.props;
 		return (
-			<button className="">{content}</button>
+			<button className="" onClick={this.handleClick}>{content}</button>
 		);
 	}
 }

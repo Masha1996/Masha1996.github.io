@@ -17,7 +17,7 @@ export class Header extends Component<Props, State> {
 
 	render () {
 		return (
-			<div className="header">
+			<div className={styles.header}>
 				<div className="settingsGrid">
 					<h4>Загрузить сетку из файла</h4>
 					<input type="file" name="file" className={styles.fileInput} onChange={this.fileSelect} />

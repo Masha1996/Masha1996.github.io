@@ -8,10 +8,16 @@ import styles from './BattleHeader.less';
 export class BattleHeader extends Component<Props> {
 	props: Props;
 
+	handleClick = (e) => {
+		e.stopPropagation()
+		// const {activeBlock, stage, blockNumber} = this.props;
+		// activeBlock && activeBlock(stage, blockNumber);
+	};
+
 	render () {
 		return (
 			<div className={styles.header}>
-				<h6>Бой № <input type="text" /></h6>
+				<h6>Бой № <input type="text" onClick={this.handleClick} /></h6>
 			</div>
 		);
 	}
