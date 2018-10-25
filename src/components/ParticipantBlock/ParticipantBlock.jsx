@@ -3,36 +3,51 @@ import 'bootstrap/dist/css/bootstrap-grid.css';
 import type {Props, State} from './flow';
 import React, {Component} from 'react';
 import 'styles/styles.less';
-import BattleButton from 'components/BattleButton';
 import styles from './ParticipantBlock.less';
 import {connect} from 'react-redux';
-import {bindActionCreators} from "redux";
-import {participantAdd} from 'actions/app';
+import {bindActionCreators} from 'redux';
+import {participantAdd, calculationScore, participantWinner} from 'actions/app';
 
-export class ParticipantBlock extends Component<Props, State> {
+export class ParticipantBlock extends Component<Props> {
 	props: Props;
 	state: State;
 
 	handleSelect = (e: Event) => {
 		const {stage, item, listParticipants, blockNumber, participantAdd} = this.props;
 		const value = e.target.value;
-		const participant = listParticipants.filter(item => item.number === value);
+		const participant = listParticipants.filter(item => item.number === value)[0];
 
 		participantAdd && participantAdd(stage, blockNumber, item, participant);
 	};
 
-	getParticipantInfo = () => {
+	handleClick = (e) => {
+		e.stopPropagation();
+	};
+
+/*	getParticipantInfo = () => {
 		const {tournament, stage, item, blockNumber} = this.props;
 		const participantInfo = tournament[stage][blockNumber] ? tournament[stage][blockNumber][item] : null;
 
 		console.log(participantInfo);
 		return participantInfo;
+	};*/
+
+	handleClickIncrease = (e: Event) => {
+		const {stage, item, blockNumber, calculationScore} = this.props;
+		calculationScore && calculationScore('INCREASE', stage, blockNumber, item);
+		e.stopPropagation();
 	};
 
-	handleClick = (e) => {
-		e.stopPropagation()
-		// const {activeBlock, stage, blockNumber} = this.props;
-		// activeBlock && activeBlock(stage, blockNumber);
+	handleClickReduce = (e) => {
+		const {stage, item, blockNumber, calculationScore} = this.props;
+		calculationScore && calculationScore('REDUCE', stage, blockNumber, item);
+		e.stopPropagation();
+	};
+
+	handleClickWinner = (e) => {
+		const {stage, item, blockNumber, participantWinner} = this.props;
+		participantWinner && participantWinner(stage, blockNumber, item);
+		e.stopPropagation();
 	};
 
 	render () {
@@ -42,15 +57,15 @@ export class ParticipantBlock extends Component<Props, State> {
 			<div className={styles.participantRow}>
 				<input className={styles.participantNumber} type="text" name="" onClick={this.handleClick}/>
 				<select name="" className={styles.participantName} onChange={this.handleSelect} onClick={this.handleClick}>
-					<option value="0"></option>
+					<option value="0" />
 					{
 						listParticipants.map((item, index) => <option key={index} value={item.number}>{item.name}</option> )
 					}
 				</select>
-				<label className="score">0</label>
-				<BattleButton content="+" />
-				<BattleButton content="-" />
-				<BattleButton content="Победитель" />
+				<label className="score">{0}</label>
+				<button className="" onClick={this.handleClickIncrease}> + </button>
+				<button className="" onClick={this.handleClickReduce}> - </button>
+				<button className="" onClick={this.handleClickWinner}>Победитель</button>
 				<p className={styles.participantInfo}>
 					возраст: <span className="age" />,
 					кю: <span className="dan" />,
@@ -63,12 +78,14 @@ export class ParticipantBlock extends Component<Props, State> {
 }
 
 const mapDispatchToProps = dispatch => ({
-	participantAdd: bindActionCreators(participantAdd, dispatch)
+	participantAdd: bindActionCreators(participantAdd, dispatch),
+	calculationScore: bindActionCreators(calculationScore, dispatch),
+	participantWinner: bindActionCreators(participantWinner, dispatch)
 });
 
 const mapStateToProps = state => ({
 	listParticipants: state.app.listParticipants,
-	tournament: state.app.tournament
+	tournament: state.app.tournament,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ParticipantBlock);

@@ -25,6 +25,10 @@ export class BattleBlock extends Component<Props> {
 		activeBlock && activeBlock(stage, blockNumber);
 	};
 
+	getScore = () => {
+
+	};
+
 	render () {
 		const {stage, blockNumber, active} = this.props;
 
@@ -32,8 +36,8 @@ export class BattleBlock extends Component<Props> {
 			<div className={this.getStyles()} onClick={this.handleClick}>
 				<div className="flex-item">
 					<BattleHeader />
-					<ParticipantBlock stage={stage} blockNumber={blockNumber} item={0}/>
-					<ParticipantBlock stage={stage} blockNumber={blockNumber} item={1}/>
+					<ParticipantBlock stage={stage} blockNumber={blockNumber} item={0} />
+					<ParticipantBlock stage={stage} blockNumber={blockNumber} item={1} />
 					{active ? <Timer /> : null}
 				</div>
 			</div>

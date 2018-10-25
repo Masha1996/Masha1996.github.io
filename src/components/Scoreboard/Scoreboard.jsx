@@ -28,7 +28,11 @@ export class Scoreboard extends Component<Props> {
 
 		// Assign values from local storage on startup
 		// idList.map((id) => {
-		// 	document.getElementById(id).textContent = localStorage[id];
+		// 	document.getElementById(id).textContent = localStorage.getItem(id);
+		// });
+
+		// window.addEventListener('storage', (e) => {
+		// 	document.getElementById(e.key).textContent = e.newValue;
 		// });
 
 		return (
@@ -38,7 +42,9 @@ export class Scoreboard extends Component<Props> {
 				<table align="center" width="1028px">
 					<tbody>
 					<tr>
-						<td className={styles.gradient_1} width="380px" id="leftPlayerNumber" />
+						<td className={styles.gradient_1} width="380px" id="leftPlayerNumber">
+							{localStorage.getItem('leftPlayerNumber')}
+						</td>
 						<td width="100px" rowSpan="2"><h1 id="timeLabel">00:00</h1></td>
 						<td className={styles.gradient_1} width="380px" id="rightPlayerNumber" />
 					</tr>

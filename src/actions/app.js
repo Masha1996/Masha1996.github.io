@@ -1,5 +1,5 @@
 // @flow
-import {FILE, PARTICIPANT, BLOCK} from 'constants/app';
+import {FILE, PARTICIPANT, BLOCK, SCORE} from 'constants/app';
 import type {Dispatch} from 'types';
 
 export const listParticipants = (target) => (dispatch: Dispatch) => {
@@ -42,12 +42,35 @@ export const participantAdd = (stage, block, item, value) => (dispatch: Dispatch
 	});
 };
 
+export const participantWinner = (stage, block, item) => (dispatch: Dispatch) => {
+	dispatch({
+		type: PARTICIPANT.WINNER,
+		data: {
+			stage: stage,
+			block: block,
+			item: item
+		}
+	});
+};
+
 export const activeBlock = (state, block) => (dispatch: Dispatch) => {
 	const activeBlock = [state, block];
 	dispatch({
 		type: BLOCK.ACTIVE,
 		data: {
 			activeBlock: activeBlock
+		}
+	});
+};
+
+export const calculationScore = (action, stage, block, item) => (dispatch: Dispatch) => {
+	dispatch({
+		type: SCORE.CALCULATION,
+		data: {
+			stage: stage,
+			block: block,
+			item: item,
+			action: action
 		}
 	});
 };

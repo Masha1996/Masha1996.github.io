@@ -1,8 +1,10 @@
 // @flow
 const SELECTED: 'SELECTED' = 'SELECTED';
 const ADD: 'ADD' = 'ADD';
+const WINNER: 'WINNER' = 'WINNER';
 const UNKNOWN: 'UNKNOWN' = 'UNKNOWN';
 const ACTIVE: 'ACTIVE' = 'ACTIVE';
+const CALCULATION: 'CALCULATION' = 'CALCULATION';
 
 export const FILE = {
 	SELECTED,
@@ -10,11 +12,16 @@ export const FILE = {
 };
 
 export const PARTICIPANT = {
-	ADD
+	ADD,
+	WINNER
 };
 
 export const BLOCK = {
 	ACTIVE
+};
+
+export const SCORE = {
+	CALCULATION
 };
 
 export const defaultAppAction = {

@@ -107,7 +107,7 @@ export class App extends Component<Props> {
 
 const mapStateToProps = state => ({
 	listParticipants: state.app.listParticipants,
-	activeBlock: state.app.activeBlock
+	activeBlock: state.app.activeBlock,
 });
 
 export default connect(mapStateToProps)(App);
