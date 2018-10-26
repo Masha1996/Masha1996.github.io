@@ -8,6 +8,11 @@ import styles from './Scoreboard.less';
 export class Scoreboard extends Component<Props> {
 	props: Props;
 
+	getWinner = (item) => {
+		const winner = localStorage.getItem('winner');
+		return winner === item ? styles.redMarker : styles.whiteMarker;
+	};
+
 	render () {
 		// Read actual values once
 		const idList = [
@@ -23,7 +28,8 @@ export class Scoreboard extends Component<Props> {
 			"scoreRight",
 			"timeLabel",
 			"NameTurnir",
-			"fightNumber"
+			"fightNumber",
+			"winner"
 		];
 
 		// Assign values from local storage on startup
@@ -37,44 +43,47 @@ export class Scoreboard extends Component<Props> {
 
 		return (
 			<div>
-				<h2 id="NameTurnir" />
+				<h2/>
 				<h3>ВЫСТУПАЮТ</h3>
 				<table align="center" width="1028px">
 					<tbody>
 					<tr>
-						<td className={styles.gradient_1} width="380px" id="leftPlayerNumber">
+						<td className={styles.gradient_1} width="380px">
 							{localStorage.getItem('leftPlayerNumber')}
 						</td>
 						<td width="100px" rowSpan="2"><h1 id="timeLabel">
-							{localStorage.getItem('')}
+							{localStorage.getItem('timeLabel')}
 						</h1></td>
-						<td className={styles.gradient_1} width="380px" id="rightPlayerNumber">
+						<td className={styles.gradient_1} width="380px">
 							{localStorage.getItem('rightPlayerNumber')}
 						</td>
 					</tr>
 					<tr>
-						<td className={styles.gradient_2} width="380px" rowSpan="2" id="leftPlayerName">
+						<td className={styles.gradient_2} width="380px" rowSpan="2">
 							{localStorage.getItem('leftPlayerName')}
 						</td>
-						<td className={styles.gradient_2} width="380px" rowSpan="2" id="rightPlayerName">
+						<td className={styles.gradient_2} width="380px" rowSpan="2">
 							{localStorage.getItem('rightPlayerName')}
 						</td>
 					</tr>
 					<tr>
 						<td>
-							Бой №
-							<span id="fightNumber">{localStorage.getItem('')}</span>
+							Бой № {localStorage.getItem('fightNumber')}
 						</td>
 					</tr>
 					<tr>
-						<td bgcolor="#FF0000" />
+						<td className={this.getWinner('0')} />
 						<td height="20px" />
-						<td />
+						<td className={this.getWinner('1')} />
 					</tr>
 					<tr>
-						<td id="scoreLeft" />
+						<td>
+							{localStorage.getItem('scoreLeft')}
+						</td>
 						<td width="100px" />
-						<td id="scoreRight" />
+						<td>
+							{localStorage.getItem('scoreRight')}
+						</td>
 					</tr>
 					</tbody>
 				</table>
@@ -82,13 +91,21 @@ export class Scoreboard extends Component<Props> {
 				<table align="center" width="1028px">
 					<tbody>
 					<tr>
-						<td id="NextLeftPlayerNumber" width="380px" className={styles.gradient2_1} />
+						<td width="380px" className={styles.gradient2_1}>
+							{localStorage.getItem('NextLeftPlayerNumber')}
+						</td>
 						<td width="100px" rowSpan="2" />
-						<td id="NextRightPlayerNumber" width="380px" className={styles.gradient2_1} />
+						<td width="380px" className={styles.gradient2_1}>
+							{localStorage.getItem('NextRightPlayerNumber')}
+						</td>
 					</tr>
 					<tr>
-						<td id="NextLeftPlayerName" width="380px" className={styles.gradient2_2} />
-						<td id="NextRightPlayerName" width="380px" className={styles.gradient2_2} />
+						<td width="380px" className={styles.gradient2_2}>
+							{localStorage.getItem('NextLeftPlayerName')}
+						</td>
+						<td width="380px" className={styles.gradient2_2}>
+							{localStorage.getItem('NextRightPlayerName')}
+						</td>
 					</tr>
 					</tbody>
 				</table>

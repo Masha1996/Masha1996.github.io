@@ -46,7 +46,6 @@ export class ParticipantBlock extends Component<Props> {
 	handleClickIncrease = (e: Event) => {
 		const {stage, item, blockNumber, calculationScore, tournament} = this.props;
 		calculationScore && calculationScore('INCREASE', stage, blockNumber, item);
-		localStorage.setItem('leftPlayerNumber', '999');
 		this.setState(state => ({
 			clicks: state.clicks + 1
 		}));

@@ -13,6 +13,19 @@ export class Header extends Component<Props, State> {
 	fileSelect = (e: Event) => {
 			const {listParticipants} = this.props;
 			listParticipants && listParticipants(e.target);
+
+		localStorage.setItem('leftPlayerName', '');
+		localStorage.setItem('leftPlayerNumber', '');
+		localStorage.setItem('rightPlayerName', '');
+		localStorage.setItem('rightPlayerNumber', '');
+		localStorage.setItem('NextLeftPlayerName', '');
+		localStorage.setItem('NextLeftPlayerNumber', '');
+		localStorage.setItem('NextRightPlayerName', '');
+		localStorage.setItem('NextRightPlayerNumber', '');
+		localStorage.setItem('timeLabel', '');
+		localStorage.setItem('fightNumber', '');
+		localStorage.setItem('scoreLeft', '');
+		localStorage.setItem('scoreRight', '');
 	};
 
 	render () {

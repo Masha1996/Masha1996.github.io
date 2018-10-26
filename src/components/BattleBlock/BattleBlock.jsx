@@ -21,8 +21,18 @@ export class BattleBlock extends Component<Props> {
 	};
 
 	handleClick = (e) => {
-		const {activeBlock, stage, blockNumber} = this.props;
+		const {activeBlock, stage, blockNumber, tournament} = this.props;
 		activeBlock && activeBlock(stage, blockNumber);
+
+		localStorage.setItem('leftPlayerName', tournament[stage][blockNumber][0].name);
+		localStorage.setItem('leftPlayerNumber', tournament[stage][blockNumber][0].number);
+		localStorage.setItem('rightPlayerName', tournament[stage][blockNumber][1].name);
+		localStorage.setItem('rightPlayerNumber', tournament[stage][blockNumber][1].number);
+
+		localStorage.setItem('NextLeftPlayerName', tournament[stage][blockNumber + 1][0].name);
+		localStorage.setItem('NextLeftPlayerNumber', tournament[stage][blockNumber + 1][0].number);
+		localStorage.setItem('NextRightPlayerName', tournament[stage][blockNumber + 1][1].name);
+		localStorage.setItem('NextRightPlayerNumber', tournament[stage][blockNumber + 1][1].number);
 	};
 
 	getScore = () => {
@@ -49,4 +59,8 @@ const mapDispatchToProps = dispatch => ({
 	activeBlock: bindActionCreators(activeBlock, dispatch)
 });
 
-export default connect(null, mapDispatchToProps)(BattleBlock);
+const mapStateToProps = state => ({
+	tournament: state.app.tournament,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(BattleBlock);
