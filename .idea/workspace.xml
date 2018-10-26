@@ -151,7 +151,7 @@
         <counts>
           <entry key="js" value="1783" />
           <entry key="json" value="8" />
-          <entry key="jsx" value="5623" />
+          <entry key="jsx" value="5687" />
           <entry key="less" value="192" />
           <entry key="md" value="29" />
         </counts>
@@ -159,7 +159,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="8" />
-          <entry key="JSX Harmony" value="5623" />
+          <entry key="JSX Harmony" value="5687" />
           <entry key="JavaScript" value="1783" />
           <entry key="Less" value="192" />
           <entry key="Markdown" value="29" />
@@ -200,8 +200,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+            <state relative-caret-position="197">
+              <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
@@ -236,8 +236,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="17" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="765">
+              <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="57" />
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
@@ -580,7 +580,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="478682000" />
+    <option name="totallyTimeSpent" value="479385000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -957,8 +957,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="17" />
+        <state relative-caret-position="765">
+          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="57" />
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>
@@ -967,8 +967,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
+        <state relative-caret-position="197">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>

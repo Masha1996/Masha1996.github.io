@@ -12,10 +12,19 @@ export class ParticipantBlock extends Component<Props> {
 	props: Props;
 	state: State;
 
-	constructor() {
+	constructor () {
 		super();
 		this.state = {
-			clicks: 0
+			clicks: 0,
+			participant: {
+				age: "",
+				dan: "",
+				name: "",
+				number: "",
+				score: 0,
+				trainer: "",
+				weight: ""
+			}
 		};
 	}
 
@@ -25,6 +34,9 @@ export class ParticipantBlock extends Component<Props> {
 		const participant = listParticipants.filter(item => item.number === value)[0];
 
 		participantAdd && participantAdd(stage, blockNumber, item, participant);
+		this.setState(state => ({
+			participant: participant
+		}));
 	};
 
 	handleClick = (e) => {
@@ -69,10 +81,11 @@ export class ParticipantBlock extends Component<Props> {
 	render () {
 		const {listParticipants} = this.props;
 		const clicks = this.state.clicks || 0;
+		const participant = this.state.participant;
 
 		return (
 			<div className={styles.participantRow}>
-				<input className={styles.participantNumber} type="text" name="" onClick={this.handleClick}/>
+				<input className={styles.participantNumber} type="text" value={participant.number} name="" onClick={this.handleClick}/>
 				<select name="" className={styles.participantName} onChange={this.handleSelect} onClick={this.handleClick}>
 					<option value="0" />
 					{
@@ -84,10 +97,10 @@ export class ParticipantBlock extends Component<Props> {
 				<button className="" onClick={this.handleClickReduce}> - </button>
 				<button className="" onClick={this.handleClickWinner}>Победитель</button>
 				<p className={styles.participantInfo}>
-					возраст: <span className="age" />,
-					кю: <span className="dan" />,
-					вес: <span className="weight" />кг,
-					клуб: <span className="trainer"/>
+					возраст: {participant.age},
+					кю: {participant.dan},
+					вес: {participant.weight}кг,
+					клуб: {participant.trainer}
 				</p>
 			</div>
 		);
