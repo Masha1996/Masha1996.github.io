@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f5f7830-6092-4cfe-bc25-db3db6855040" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -153,7 +151,7 @@
         <counts>
           <entry key="js" value="1783" />
           <entry key="json" value="8" />
-          <entry key="jsx" value="5543" />
+          <entry key="jsx" value="5623" />
           <entry key="less" value="192" />
           <entry key="md" value="29" />
         </counts>
@@ -161,7 +159,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="8" />
-          <entry key="JSX Harmony" value="5543" />
+          <entry key="JSX Harmony" value="5623" />
           <entry key="JavaScript" value="1783" />
           <entry key="Less" value="192" />
           <entry key="Markdown" value="29" />
@@ -202,8 +200,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+            <state relative-caret-position="316">
+              <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
@@ -238,8 +236,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="16" />
+            <state relative-caret-position="330">
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="17" />
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
@@ -582,7 +580,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="478403000" />
+    <option name="totallyTimeSpent" value="478682000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -959,8 +957,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="16" />
+        <state relative-caret-position="330">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="17" />
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>
@@ -969,8 +967,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        <state relative-caret-position="316">
+          <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>

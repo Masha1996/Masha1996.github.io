@@ -32,22 +32,32 @@ export class ParticipantBlock extends Component<Props> {
 	};
 
 	handleClickIncrease = (e: Event) => {
-		const {stage, item, blockNumber, calculationScore} = this.props;
+		const {stage, item, blockNumber, calculationScore, tournament} = this.props;
 		calculationScore && calculationScore('INCREASE', stage, blockNumber, item);
 		localStorage.setItem('leftPlayerNumber', '999');
 		this.setState(state => ({
 			clicks: state.clicks + 1
 		}));
+		if (item === 0 ) {
+			localStorage.setItem('scoreLeft', tournament[stage][blockNumber][item].score);
+		} else if (item === 1) {
+			localStorage.setItem('scoreRight', tournament[stage][blockNumber][item].score);
+		}
 		e.stopPropagation();
 	};
 
 	handleClickReduce = (e) => {
-		const {stage, item, blockNumber, calculationScore} = this.props;
+		const {stage, item, blockNumber, calculationScore, tournament} = this.props;
 		calculationScore && calculationScore('REDUCE', stage, blockNumber, item);
 		e.stopPropagation();
 		this.setState(state => ({
 			clicks: state.clicks > 0 ? state.clicks - 1 : 0
 		}));
+		if (item === 0 ) {
+			localStorage.setItem('scoreLeft', tournament[stage][blockNumber][item].score);
+		} else if (item === 1) {
+			localStorage.setItem('scoreRight', tournament[stage][blockNumber][item].score);
+		}
 	};
 
 	handleClickWinner = (e) => {
