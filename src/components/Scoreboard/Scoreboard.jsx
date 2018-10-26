@@ -45,15 +45,26 @@ export class Scoreboard extends Component<Props> {
 						<td className={styles.gradient_1} width="380px" id="leftPlayerNumber">
 							{localStorage.getItem('leftPlayerNumber')}
 						</td>
-						<td width="100px" rowSpan="2"><h1 id="timeLabel">00:00</h1></td>
-						<td className={styles.gradient_1} width="380px" id="rightPlayerNumber" />
+						<td width="100px" rowSpan="2"><h1 id="timeLabel">
+							{localStorage.getItem('')}
+						</h1></td>
+						<td className={styles.gradient_1} width="380px" id="rightPlayerNumber">
+							{localStorage.getItem('rightPlayerNumber')}
+						</td>
 					</tr>
 					<tr>
-						<td className={styles.gradient_2} width="380px" rowSpan="2" id="leftPlayerName" />
-						<td className={styles.gradient_2} width="380px" rowSpan="2" id="rightPlayerName" />
+						<td className={styles.gradient_2} width="380px" rowSpan="2" id="leftPlayerName">
+							{localStorage.getItem('leftPlayerName')}
+						</td>
+						<td className={styles.gradient_2} width="380px" rowSpan="2" id="rightPlayerName">
+							{localStorage.getItem('rightPlayerName')}
+						</td>
 					</tr>
 					<tr>
-						<td>Бой №<span id="fightNumber" /></td>
+						<td>
+							Бой №
+							<span id="fightNumber">{localStorage.getItem('')}</span>
+						</td>
 					</tr>
 					<tr>
 						<td bgcolor="#FF0000" />

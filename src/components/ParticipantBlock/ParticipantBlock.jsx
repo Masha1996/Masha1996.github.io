@@ -12,6 +12,13 @@ export class ParticipantBlock extends Component<Props> {
 	props: Props;
 	state: State;
 
+	constructor() {
+		super();
+		this.state = {
+			clicks: 0
+		};
+	}
+
 	handleSelect = (e: Event) => {
 		const {stage, item, listParticipants, blockNumber, participantAdd} = this.props;
 		const value = e.target.value;
@@ -24,17 +31,13 @@ export class ParticipantBlock extends Component<Props> {
 		e.stopPropagation();
 	};
 
-/*	getParticipantInfo = () => {
-		const {tournament, stage, item, blockNumber} = this.props;
-		const participantInfo = tournament[stage][blockNumber] ? tournament[stage][blockNumber][item] : null;
-
-		console.log(participantInfo);
-		return participantInfo;
-	};*/
-
 	handleClickIncrease = (e: Event) => {
 		const {stage, item, blockNumber, calculationScore} = this.props;
 		calculationScore && calculationScore('INCREASE', stage, blockNumber, item);
+		localStorage.setItem('leftPlayerNumber', '999');
+		this.setState(state => ({
+			clicks: state.clicks + 1
+		}));
 		e.stopPropagation();
 	};
 
@@ -42,6 +45,9 @@ export class ParticipantBlock extends Component<Props> {
 		const {stage, item, blockNumber, calculationScore} = this.props;
 		calculationScore && calculationScore('REDUCE', stage, blockNumber, item);
 		e.stopPropagation();
+		this.setState(state => ({
+			clicks: state.clicks > 0 ? state.clicks - 1 : 0
+		}));
 	};
 
 	handleClickWinner = (e) => {
@@ -52,6 +58,7 @@ export class ParticipantBlock extends Component<Props> {
 
 	render () {
 		const {listParticipants} = this.props;
+		const clicks = this.state.clicks || 0;
 
 		return (
 			<div className={styles.participantRow}>
@@ -62,7 +69,7 @@ export class ParticipantBlock extends Component<Props> {
 						listParticipants.map((item, index) => <option key={index} value={item.number}>{item.name}</option> )
 					}
 				</select>
-				<label className="score">{0}</label>
+				<label className="score">{clicks}</label>
 				<button className="" onClick={this.handleClickIncrease}> + </button>
 				<button className="" onClick={this.handleClickReduce}> - </button>
 				<button className="" onClick={this.handleClickWinner}>Победитель</button>

@@ -14,10 +14,14 @@ export class BattleHeader extends Component<Props> {
 		// activeBlock && activeBlock(stage, blockNumber);
 	};
 
+	hendleBlur = () => {
+
+	};
+
 	render () {
 		return (
 			<div className={styles.header}>
-				<h6>Бой № <input type="text" onClick={this.handleClick} /></h6>
+				<h6>Бой № <input type="text" onClick={this.handleClick} onBlur={this.hendleBlur} /></h6>
 			</div>
 		);
 	}
