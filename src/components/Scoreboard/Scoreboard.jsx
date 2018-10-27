@@ -8,8 +8,42 @@ import styles from './Scoreboard.less';
 export class Scoreboard extends Component<Props> {
 	props: Props;
 
+	constructor () {
+		super();
+		this.state = {
+			scoreboard: {
+				leftPlayerName: localStorage.setItem('leftPlayerName', ''),
+				leftPlayerNumber: localStorage.setItem('leftPlayerNumber', ''),
+				rightPlayerName: localStorage.setItem('rightPlayerName', ''),
+				rightPlayerNumber: localStorage.setItem('rightPlayerNumber', ''),
+				NextLeftPlayerName: localStorage.setItem('NextLeftPlayerName', ''),
+				NextLeftPlayerNumber: localStorage.setItem('NextLeftPlayerNumber', ''),
+				NextRightPlayerName: localStorage.setItem('NextRightPlayerName', ''),
+				NextRightPlayerNumber: localStorage.setItem('NextRightPlayerNumber', ''),
+				timeLabel: localStorage.setItem('timeLabel', ''),
+				fightNumber: localStorage.setItem('fightNumber', ''),
+				scoreLeft: localStorage.setItem('scoreLeft', ''),
+				scoreRight: localStorage.setItem('scoreRight', ''),
+				NameTurnir: localStorage.setItem('NameTurnir', ''),
+				winner: localStorage.setItem('winner', '')
+			}
+		}
+	}
+
+	componentDidMount () {
+		if (typeof window !== 'undefined') {
+			this.setState({scoreboard: localStorage});
+		}
+
+		window.addEventListener('storage', events => {
+			this.setState(state => ({
+				scoreboard: events
+			}));
+		});
+	}
+
 	getWinner = (item) => {
-		const winner = localStorage.getItem('winner');
+		const winner = this.state.scoreboard.winner;
 		return winner === item ? styles.redMarker : styles.whiteMarker;
 	};
 
@@ -42,6 +76,7 @@ export class Scoreboard extends Component<Props> {
 		// });
 
 		console.log(localStorage);
+		const {scoreboard} = this.state;
 
 		return (
 			<div>
