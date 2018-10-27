@@ -22,10 +22,10 @@ export class Header extends Component<Props, State> {
 		localStorage.setItem('NextLeftPlayerNumber', '');
 		localStorage.setItem('NextRightPlayerName', '');
 		localStorage.setItem('NextRightPlayerNumber', '');
-		localStorage.setItem('timeLabel', '');
+		localStorage.setItem('timeLabel', '00:00');
 		localStorage.setItem('fightNumber', '');
-		localStorage.setItem('scoreLeft', '');
-		localStorage.setItem('scoreRight', '');
+		localStorage.setItem('scoreLeft', '0');
+		localStorage.setItem('scoreRight', '0');
 	};
 
 	render () {

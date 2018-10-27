@@ -108,10 +108,10 @@ export class Scoreboard extends Component<Props> {
 							Бой № {localStorage.getItem('fightNumber')}
 						</td>
 					</tr>
-					<tr>
-						<td className={this.getWinner('0')} />
-						<td height="20px" />
-						<td className={this.getWinner('1')} />
+					<tr className={styles.winnerRow}>
+						<td className={localStorage.getItem('winner') === '0' ? styles.redMarker : null} />
+						<td className={styles.clear} height="20px" />
+						<td className={localStorage.getItem('winner') === '1' ? styles.redMarker : null} />
 					</tr>
 					<tr>
 						<td>

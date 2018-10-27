@@ -18,6 +18,7 @@ const app = (state: AppState = initialAppState, action: AppAction = defaultAppAc
 		case PARTICIPANT.WINNER:
 			return {
 				...state,
+				participantWinner: {stage: action.data.stage, block: action.data.block, item: action.data.item},
 				tournament: setWinner(state.tournament, action.data.stage, action.data.block, action.data.item),
 			};
 		case BLOCK.ACTIVE:

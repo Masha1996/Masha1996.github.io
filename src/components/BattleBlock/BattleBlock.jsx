@@ -35,19 +35,15 @@ export class BattleBlock extends Component<Props> {
 		localStorage.setItem('NextRightPlayerNumber', tournament[stage][blockNumber + 1][1].number);
 	};
 
-	getScore = () => {
-
-	};
-
 	render () {
-		const {stage, blockNumber, active} = this.props;
+		const {stage, blockNumber, active, winner} = this.props;
 
 		return (
 			<div className={this.getStyles()} onClick={this.handleClick}>
 				<div className="flex-item">
 					<BattleHeader />
-					<ParticipantBlock stage={stage} blockNumber={blockNumber} item={0} />
-					<ParticipantBlock stage={stage} blockNumber={blockNumber} item={1} />
+					<ParticipantBlock stage={stage} blockNumber={blockNumber} item={0} winner={winner} />
+					<ParticipantBlock stage={stage} blockNumber={blockNumber} item={1} winner={winner} />
 					{active ? <Timer /> : null}
 				</div>
 			</div>

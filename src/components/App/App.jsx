@@ -53,6 +53,7 @@ export class App extends Component<Props> {
 	};
 
 	battleBlocks = (participants: Array<any>) => {
+		const {participantWinner} = this.props;
 		const columns = this.getGridRow(participants.length);
 		return columns.map((item, index) =>
 			<BattleBlock
@@ -61,6 +62,7 @@ export class App extends Component<Props> {
 				stage={item[1]}
 				blockNumber={item[2]}
 				active={this.isActiveBlock(item[1], item[2])}
+				winner={participantWinner}
 			/>);
 	};
 
@@ -108,6 +110,7 @@ export class App extends Component<Props> {
 const mapStateToProps = state => ({
 	listParticipants: state.app.listParticipants,
 	activeBlock: state.app.activeBlock,
+	participantWinner: state.app.participantWinner,
 });
 
 export default connect(mapStateToProps)(App);

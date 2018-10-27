@@ -24,7 +24,7 @@ export class ParticipantBlock extends Component<Props> {
 				score: 0,
 				trainer: "",
 				weight: ""
-			}
+			},
 		};
 	}
 
@@ -72,16 +72,25 @@ export class ParticipantBlock extends Component<Props> {
 	};
 
 	handleClickWinner = (e) => {
-		const {stage, item, blockNumber, participantWinner} = this.props;
+		const {stage, item, blockNumber, participantWinner, tournament} = this.props;
 		participantWinner && participantWinner(stage, blockNumber, item);
+		localStorage.setItem('winner', tournament[stage][blockNumber].winner);
 		e.stopPropagation();
 	};
 
-	render () {
-		const {listParticipants} = this.props;
-		const clicks = this.state.clicks || 0;
-		const participant = this.state.participant;
+	isWinner = () => {
+		const {winner, blockNumber, item, stage} = this.props;
+		const stageFlag = winner ? stage === winner.stage : false;
+		const blockFlag = winner ? blockNumber === winner.block : false;
+		const itemFlag = winner ? item === winner.item : false;
 
+		return stageFlag && blockFlag && itemFlag;
+	};
+
+	render () {
+		const {listParticipants, winner, item} = this.props;
+		const clicks = this.state.clicks || 0;
+		const {participant} = this.state;
 		return (
 			<div className={styles.participantRow}>
 				<input className={styles.participantNumber} type="text" value={participant.number} name="" onClick={this.handleClick}/>
@@ -94,7 +103,7 @@ export class ParticipantBlock extends Component<Props> {
 				<label className="score">{clicks}</label>
 				<button className="" onClick={this.handleClickIncrease}> + </button>
 				<button className="" onClick={this.handleClickReduce}> - </button>
-				<button className="" onClick={this.handleClickWinner}>Победитель</button>
+				<button className={this.isWinner() ? styles.winner : null} onClick={this.handleClickWinner}>Победитель</button>
 				<p className={styles.participantInfo}>
 					возраст: {participant.age},
 					кю: {participant.dan},

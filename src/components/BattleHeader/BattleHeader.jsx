@@ -14,7 +14,9 @@ export class BattleHeader extends Component<Props> {
 		// activeBlock && activeBlock(stage, blockNumber);
 	};
 
-	hendleBlur = () => {
+	hendleBlur = (e) => {
+		const value = e.target.value;
+		localStorage.setItem('fightNumber', value);
 
 	};
 
