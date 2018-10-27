@@ -270,8 +270,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="344">
+              <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
               <folding>
                 <element signature="e#9#50#0" expanded="true" />
               </folding>
@@ -571,12 +571,12 @@
       <workItem from="1539871963939" duration="15000" />
       <workItem from="1539872339935" duration="37198000" />
       <workItem from="1540398287950" duration="6682000" />
-      <workItem from="1540583011986" duration="11312000" />
+      <workItem from="1540583011986" duration="11358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="492691000" />
+    <option name="totallyTimeSpent" value="492737000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -960,8 +960,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="344">
+          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
           <folding>
             <element signature="e#9#50#0" expanded="true" />
           </folding>
