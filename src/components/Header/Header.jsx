@@ -28,6 +28,17 @@ export class Header extends Component<Props, State> {
 		localStorage.setItem('scoreRight', '0');
 	};
 
+	saveGrid = (e) => {
+		const {tournament} = this.props;
+		const btn = e.target;
+		console.log('click');
+		var csv = tournament.toString;
+		var csvData = 'data:application/csv;charset=utf-8,' + encodeURIComponent(csv);
+		btn.href = csvData;
+		btn.target = '_blank';
+		btn.download = 'filename.csv';
+	};
+
 	render () {
 		return (
 			<div className={styles.header}>
@@ -41,6 +52,9 @@ export class Header extends Component<Props, State> {
 					<select id="tournaments" />
 					<button id="removeGrid" className="settingsGrid">Удалить сетку</button>
 				</div>
+				<div>
+					<a onClick={this.saveGrid}>Сохранить сетку</a>
+				</div>
 			</div>
 		);
 	}
@@ -50,4 +64,8 @@ const mapDispatchToProps = dispatch => ({
 	listParticipants: bindActionCreators(listParticipants, dispatch)
 });
 
-export default connect(null, mapDispatchToProps)(Header);
+const mapStateToProps = state => ({
+	tournament: state.app.tournament,
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
