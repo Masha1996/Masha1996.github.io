@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f5f7830-6092-4cfe-bc25-db3db6855040" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Timer/Timer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Timer/Timer.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -158,7 +152,7 @@
         <counts>
           <entry key="js" value="1783" />
           <entry key="json" value="8" />
-          <entry key="jsx" value="6607" />
+          <entry key="jsx" value="6628" />
           <entry key="less" value="209" />
           <entry key="md" value="29" />
         </counts>
@@ -166,7 +160,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="8" />
-          <entry key="JSX Harmony" value="6607" />
+          <entry key="JSX Harmony" value="6628" />
           <entry key="JavaScript" value="1783" />
           <entry key="Less" value="209" />
           <entry key="Markdown" value="29" />
@@ -180,11 +174,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="285">
+              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
@@ -216,11 +210,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="27" column="17" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="262">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
@@ -360,8 +354,8 @@
         <option value="$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.less" />
         <option value="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx" />
         <option value="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx" />
       </list>
     </option>
   </component>
@@ -401,84 +395,6 @@
             <path>
               <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="_Example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="BattleBlock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="BattleHeader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ParticipantBlock" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Scoreboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -568,12 +484,12 @@
       <workItem from="1539871963939" duration="15000" />
       <workItem from="1539872339935" duration="37198000" />
       <workItem from="1540398287950" duration="6682000" />
-      <workItem from="1540583011986" duration="3539000" />
+      <workItem from="1540583011986" duration="3783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="484918000" />
+    <option name="totallyTimeSpent" value="485162000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -591,10 +507,10 @@
       <window_info id="npm" order="0" sideWeight="0.10194175" side_tool="true" weight="0.18871057" />
       <window_info id="Favorites" order="1" sideWeight="0.1053391" side_tool="true" weight="0.19071038" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.8946609" visible="true" weight="0.2015504" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.8946609" visible="true" weight="0.2015504" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.4982382" visible="true" weight="0.23253012" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.4982382" visible="true" weight="0.23253012" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5017618" side_tool="true" weight="0.51566267" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -925,16 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="e#9#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -957,8 +863,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        <state relative-caret-position="285">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="e#9#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>

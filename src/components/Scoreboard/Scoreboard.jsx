@@ -41,6 +41,8 @@ export class Scoreboard extends Component<Props> {
 		// 	document.getElementById(e.key).textContent = e.newValue;
 		// });
 
+		console.log(localStorage);
+
 		return (
 			<div>
 				<h2/>
