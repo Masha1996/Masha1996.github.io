@@ -53,6 +53,18 @@ export const participantWinner = (stage, block, item) => (dispatch: Dispatch) =>
 	});
 };
 
+export const battleNumber = (stage, block, item, value) => (dispatch: Dispatch) => {
+	dispatch({
+		type: BLOCK.NUMBER,
+		data: {
+			stage: stage,
+			block: block,
+			item: item,
+			value: value
+		}
+	});
+};
+
 export const activeBlock = (state, block) => (dispatch: Dispatch) => {
 	const activeBlock = [state, block];
 	dispatch({

@@ -24,15 +24,16 @@ export class BattleBlock extends Component<Props> {
 		const {activeBlock, stage, blockNumber, tournament} = this.props;
 		activeBlock && activeBlock(stage, blockNumber);
 
-		localStorage.setItem('leftPlayerName', tournament[stage][blockNumber][0].name);
-		localStorage.setItem('leftPlayerNumber', tournament[stage][blockNumber][0].number);
-		localStorage.setItem('rightPlayerName', tournament[stage][blockNumber][1].name);
-		localStorage.setItem('rightPlayerNumber', tournament[stage][blockNumber][1].number);
+		localStorage.setItem('leftPlayerName', tournament[stage][blockNumber] ? tournament[stage][blockNumber][0].name : '');
+		localStorage.setItem('leftPlayerNumber', tournament[stage][blockNumber] ? tournament[stage][blockNumber][0].number : '');
+		localStorage.setItem('rightPlayerName', tournament[stage][blockNumber] ? tournament[stage][blockNumber][1].name : '');
+		localStorage.setItem('rightPlayerNumber', tournament[stage][blockNumber] ? tournament[stage][blockNumber][1].number : '');
+		localStorage.setItem('fightNumber', tournament[stage][blockNumber] ? tournament[stage][blockNumber].battleNumber : '');
 
-		localStorage.setItem('NextLeftPlayerName', tournament[stage][blockNumber + 1][0].name);
-		localStorage.setItem('NextLeftPlayerNumber', tournament[stage][blockNumber + 1][0].number);
-		localStorage.setItem('NextRightPlayerName', tournament[stage][blockNumber + 1][1].name);
-		localStorage.setItem('NextRightPlayerNumber', tournament[stage][blockNumber + 1][1].number);
+		localStorage.setItem('NextLeftPlayerName', tournament[stage][blockNumber + 1] ? tournament[stage][blockNumber + 1][0].name : '');
+		localStorage.setItem('NextLeftPlayerNumber', tournament[stage][blockNumber + 1] ? tournament[stage][blockNumber + 1][0].number : '');
+		localStorage.setItem('NextRightPlayerName', tournament[stage][blockNumber + 1] ? tournament[stage][blockNumber + 1][1].name : '');
+		localStorage.setItem('NextRightPlayerNumber', tournament[stage][blockNumber + 1] ? tournament[stage][blockNumber + 1][1].number : '');
 	};
 
 	render () {
@@ -41,7 +42,7 @@ export class BattleBlock extends Component<Props> {
 		return (
 			<div className={this.getStyles()} onClick={this.handleClick}>
 				<div className="flex-item">
-					<BattleHeader />
+					<BattleHeader stage={stage} blockNumber={blockNumber} item={0} />
 					<ParticipantBlock stage={stage} blockNumber={blockNumber} item={0} winner={winner} />
 					<ParticipantBlock stage={stage} blockNumber={blockNumber} item={1} winner={winner} />
 					{active ? <Timer /> : null}

@@ -26,6 +26,11 @@ const app = (state: AppState = initialAppState, action: AppAction = defaultAppAc
 				...state,
 				activeBlock: isActive(state.activeBlock, action.data.activeBlock)
 			};
+		case BLOCK.NUMBER:
+			return {
+				...state,
+				tournament: setNumber(state.tournament, action.data.stage, action.data.block, action.data.item, action.data.value)
+			};
 		case SCORE.CALCULATION:
 			return {
 				...state,
@@ -78,3 +83,10 @@ const calculationScore = (tournament, stage, block, item, action) => {
 	tournament[stage][block] = battle;
 	return tournament;
 };
+
+const setNumber = (tournament, stage, block, item, value) => {
+	let battle = tournament[stage][block] || [];
+	battle.battleNumber = value;
+	tournament[stage][block] = battle;
+	return tournament;
+}

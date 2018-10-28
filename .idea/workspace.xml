@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f5f7830-6092-4cfe-bc25-db3db6855040" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -130,9 +135,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="73" />
+          <entry key="js" value="74" />
           <entry key="json" value="2" />
-          <entry key="jsx" value="59" />
+          <entry key="jsx" value="60" />
           <entry key="less" value="21" />
           <entry key="md" value="1" />
           <entry key="ts" value="2" />
@@ -141,8 +146,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="2" />
-          <entry key="JSX Harmony" value="59" />
-          <entry key="JavaScript" value="73" />
+          <entry key="JSX Harmony" value="60" />
+          <entry key="JavaScript" value="74" />
           <entry key="Less" value="21" />
           <entry key="Markdown" value="1" />
           <entry key="TypeScript" value="2" />
@@ -150,9 +155,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1821" />
+          <entry key="js" value="1937" />
           <entry key="json" value="8" />
-          <entry key="jsx" value="8255" />
+          <entry key="jsx" value="8417" />
           <entry key="less" value="241" />
           <entry key="md" value="29" />
         </counts>
@@ -160,8 +165,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="8" />
-          <entry key="JSX Harmony" value="8255" />
-          <entry key="JavaScript" value="1821" />
+          <entry key="JSX Harmony" value="8417" />
+          <entry key="JavaScript" value="1937" />
           <entry key="Less" value="241" />
           <entry key="Markdown" value="29" />
         </counts>
@@ -177,8 +182,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+            <state relative-caret-position="80">
+              <caret line="31" selection-start-line="31" selection-end-line="32" />
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
@@ -187,10 +192,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#9#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="45" column="91" selection-start-line="45" selection-start-column="91" selection-end-line="45" selection-end-column="91" />
+            <state relative-caret-position="290">
+              <caret line="35" column="83" selection-start-line="35" selection-start-column="83" selection-end-line="35" selection-end-column="83" />
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
@@ -201,8 +218,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/App/App.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-443">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="127">
+              <caret line="52" column="4" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
@@ -213,8 +230,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="44" column="30" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="30" />
+            <state relative-caret-position="217">
+              <caret line="57" column="10" lean-forward="true" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="22" />
               <folding>
                 <element signature="e#9#71#0" expanded="true" />
               </folding>
@@ -225,8 +242,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducers/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="20" column="86" selection-start-line="20" selection-start-column="86" selection-end-line="20" selection-end-column="86" />
+            <state relative-caret-position="1207">
+              <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
               <folding>
                 <element signature="e#9#57#0" expanded="true" />
               </folding>
@@ -237,8 +254,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/constants/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="366">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -258,8 +275,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1499">
-              <caret line="111" column="91" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="91" />
+            <state relative-caret-position="391">
+              <caret line="107" column="54" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="54" />
               <folding>
                 <element signature="e#9#56#0" expanded="true" />
               </folding>
@@ -267,7 +284,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="344">
@@ -317,10 +334,10 @@
       <find>stopPropagation</find>
       <find>battleBlocks</find>
       <find>participantWinner</find>
-      <find>tournament</find>
-      <find>activeBlock</find>
-      <find>winner</find>
       <find>button</find>
+      <find>winner</find>
+      <find>activeBlock</find>
+      <find>tournament</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -380,18 +397,18 @@
         <option value="$PROJECT_DIR$/src/constants/index.js" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.less" />
         <option value="$PROJECT_DIR$/src/components/BattleButton/BattleButton.jsx" />
-        <option value="$PROJECT_DIR$/src/constants/app.js" />
-        <option value="$PROJECT_DIR$/src/actions/app.js" />
         <option value="$PROJECT_DIR$/src/components/Timer/Timer.jsx" />
         <option value="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.less" />
         <option value="$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.less" />
         <option value="$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx" />
-        <option value="$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx" />
-        <option value="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" />
-        <option value="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx" />
         <option value="$PROJECT_DIR$/src/components/App/App.jsx" />
-        <option value="$PROJECT_DIR$/src/reducers/app.js" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx" />
+        <option value="$PROJECT_DIR$/src/constants/app.js" />
+        <option value="$PROJECT_DIR$/src/actions/app.js" />
+        <option value="$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx" />
+        <option value="$PROJECT_DIR$/src/reducers/app.js" />
+        <option value="$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx" />
       </list>
     </option>
   </component>
@@ -476,6 +493,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="ParticipantBlock" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avers-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Scoreboard" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="avers-react" type="b2602c69:ProjectViewProjectNode" />
@@ -571,12 +595,12 @@
       <workItem from="1539871963939" duration="15000" />
       <workItem from="1539872339935" duration="37198000" />
       <workItem from="1540398287950" duration="6682000" />
-      <workItem from="1540583011986" duration="11358000" />
+      <workItem from="1540583011986" duration="14110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="492737000" />
+    <option name="totallyTimeSpent" value="495489000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -594,12 +618,12 @@
       <window_info id="npm" order="0" sideWeight="0.10194175" side_tool="true" weight="0.18871057" />
       <window_info id="Favorites" order="1" sideWeight="0.1053391" side_tool="true" weight="0.19071038" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.8946609" visible="true" weight="0.2015504" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.8946609" visible="true" weight="0.2015504" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.4982382" visible="true" weight="0.34819278" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.4982382" weight="0.34819278" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5017618" side_tool="true" weight="0.51566267" />
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32891566" />
+      <window_info anchor="bottom" id="Version Control" order="4" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="7" />
@@ -881,47 +905,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/app.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="344">
+          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+          <folding>
+            <element signature="e#9#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="30" />
+        <state relative-caret-position="217">
+          <caret line="57" column="10" lean-forward="true" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="22" />
           <folding>
             <element signature="e#9#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx">
+    <entry file="file://$PROJECT_DIR$/src/constants/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="45" column="91" selection-start-line="45" selection-start-column="91" selection-end-line="45" selection-end-column="91" />
-          <folding>
-            <element signature="e#9#56#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="366">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/app.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="20" column="86" selection-start-line="20" selection-start-column="86" selection-end-line="20" selection-end-column="86" />
-          <folding>
-            <element signature="e#9#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state relative-caret-position="80">
+          <caret line="31" selection-start-line="31" selection-end-line="32" />
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>
@@ -930,8 +944,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Scoreboard/Scoreboard.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1499">
-          <caret line="111" column="91" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="91" />
+        <state relative-caret-position="391">
+          <caret line="107" column="54" selection-start-line="107" selection-start-column="43" selection-end-line="107" selection-end-column="54" />
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>
@@ -940,30 +954,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-443">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="127">
+          <caret line="52" column="4" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ParticipantBlock/ParticipantBlock.jsx">
+    <entry file="file://$PROJECT_DIR$/src/reducers/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+        <state relative-caret-position="1207">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+          <folding>
+            <element signature="e#9#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BattleHeader/BattleHeader.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#9#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/BattleBlock/BattleBlock.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        <state relative-caret-position="290">
+          <caret line="35" column="83" selection-start-line="35" selection-start-column="83" selection-end-line="35" selection-end-column="83" />
           <folding>
-            <element signature="e#9#50#0" expanded="true" />
+            <element signature="e#9#56#0" expanded="true" />
           </folding>
         </state>
       </provider>

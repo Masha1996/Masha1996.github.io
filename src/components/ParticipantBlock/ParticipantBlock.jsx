@@ -31,12 +31,13 @@ export class ParticipantBlock extends Component<Props> {
 	handleSelect = (e: Event) => {
 		const {stage, item, listParticipants, blockNumber, participantAdd} = this.props;
 		const value = e.target.value;
-		const participant = listParticipants.filter(item => item.number === value)[0];
-
-		participantAdd && participantAdd(stage, blockNumber, item, participant);
-		this.setState(state => ({
-			participant: participant
-		}));
+		if (value !== 0) {
+			const participant = listParticipants.filter(item => item.number === value)[0];
+			participantAdd && participantAdd(stage, blockNumber, item, participant);
+			this.setState(state => ({
+				participant: participant
+			}));
+		}
 	};
 
 	handleClick = (e) => {
@@ -93,9 +94,9 @@ export class ParticipantBlock extends Component<Props> {
 		const {participant} = this.state;
 		return (
 			<div className={styles.participantRow}>
-				<input className={styles.participantNumber} type="text" value={participant.number} name="" onClick={this.handleClick}/>
+				<input className={styles.participantNumber} type="text" value={participant ? participant.number : ''} name="" onClick={this.handleClick}/>
 				<select name="" className={styles.participantName} onChange={this.handleSelect} onClick={this.handleClick}>
-					<option value="0" />
+					<option selected value="0" />
 					{
 						listParticipants.map((item, index) => <option key={index} value={item.number}>{item.name}</option> )
 					}
@@ -105,10 +106,10 @@ export class ParticipantBlock extends Component<Props> {
 				<button className="" onClick={this.handleClickReduce}> - </button>
 				<button className={this.isWinner() ? styles.winner : null} onClick={this.handleClickWinner}>Победитель</button>
 				<p className={styles.participantInfo}>
-					возраст: {participant.age},
-					кю: {participant.dan},
-					вес: {participant.weight}кг,
-					клуб: {participant.trainer}
+					возраст: {participant ? participant.age : ''},
+					кю: {participant ? participant.dan : ''},
+					вес: {participant ? participant.weight : ''}кг,
+					клуб: {participant ? participant.trainer : ''}
 				</p>
 			</div>
 		);

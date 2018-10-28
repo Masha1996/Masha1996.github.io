@@ -4,6 +4,9 @@ import type {Props} from './flow';
 import React, {Component} from 'react';
 import 'styles/styles.less';
 import styles from './BattleHeader.less';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {battleNumber} from 'actions/app';
 
 export class BattleHeader extends Component<Props> {
 	props: Props;
@@ -15,8 +18,10 @@ export class BattleHeader extends Component<Props> {
 	};
 
 	hendleBlur = (e) => {
+		const {stage, item, blockNumber, battleNumber} = this.props;
 		const value = e.target.value;
-		localStorage.setItem('fightNumber', value);
+		// localStorage.setItem('fightNumber', value);
+		battleNumber && battleNumber(stage, blockNumber, item, value);
 
 	};
 
@@ -29,4 +34,8 @@ export class BattleHeader extends Component<Props> {
 	}
 }
 
-export default BattleHeader;
+const mapDispatchToProps = dispatch => ({
+	battleNumber: bindActionCreators(battleNumber, dispatch),
+});
+
+export default connect(null, mapDispatchToProps)(BattleHeader);
