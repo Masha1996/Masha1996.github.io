@@ -17,13 +17,13 @@ export class ParticipantBlock extends Component<Props> {
 		this.state = {
 			clicks: 0,
 			participant: {
-				age: "",
-				dan: "",
-				name: "",
-				number: "",
+				age: '',
+				dan: '',
+				name: '',
+				number: '',
 				score: 0,
-				trainer: "",
-				weight: ""
+				trainer: '',
+				weight: ''
 			},
 		};
 	}

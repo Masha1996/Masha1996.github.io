@@ -45,11 +45,7 @@ export class App extends Component<Props> {
 
 	isActiveBlock = (stage, blockNumber) => {
 		const {activeBlock} = this.props;
-		if (activeBlock[0] === stage && activeBlock[1] === blockNumber) {
-			return true;
-		} else {
-			return false;
-		}
+		return (activeBlock[0] === stage && activeBlock[1] === blockNumber);
 	};
 
 	battleBlocks = (participants: Array<any>) => {
